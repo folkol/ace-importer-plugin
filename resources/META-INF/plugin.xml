@@ -1,0 +1,31 @@
+<idea-plugin version="2">
+  <id>com.folkol.intellij.ace.importer</id>
+  <name>ACE Importer</name>
+  <version>0.1</version>
+  <vendor email="mattias4@kth.se" url="http://www.yourcompany.com">Folkol</vendor>
+
+  <description><![CDATA[
+      Naive plugin that sends current file to the ACE import endpoint (hard coded to localhost and admin:123456.
+    ]]></description>¡
+
+  <change-notes><![CDATA[
+      First version, little to no error handling, no configuration.
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="141.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action id="AceImporter.ImportFile"
+            class="ImportFileAction"
+            text="Send file to ACE"
+            description="Send this file to the ACE ImportResource endpoint.">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt I"/>
+    </action>
+  </actions>
+
+</idea-plugin>
