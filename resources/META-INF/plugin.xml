@@ -5,7 +5,7 @@
   <vendor email="mattias4@kth.se" url="http://www.yourcompany.com">Folkol</vendor>
 
   <description><![CDATA[
-      Naive plugin that sends current file to the ACE import endpoint (hard coded to localhost and admin:123456.
+      Naive IntelliJ plugin that sends current file to the ACE import endpoint (hard coded to use admin:123456@localhost).
     ]]></description>¡
 
   <change-notes><![CDATA[
